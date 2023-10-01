@@ -1,0 +1,139 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Div Boyutlarını genişlik 150px yükseklik 100 px olacak şekilde değiştern
+mixini yazınız.Divin dışarıdan aldığı renk olacak
+*/
+/*1 divin içine 4 tane div koyun.ekran bouyutu 1200px iken yan yana olsunlar 
+Ekran Boyutu 760px altında iken alt alta
+olacakları şekilde mixin yazınız.
+*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+  padding: 15px 25px;
+}
+.header-logo {
+  font-size: 15px;
+  font-weight: bold;
+}
+.header-navbar {
+  display: flex;
+  gap: 8px;
+}
+.header-navbar a {
+  text-decoration: none;
+  color: rgba(51, 51, 51, 0.2);
+}
+.header-right {
+  background-color: gray;
+  color: purple;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.header-right-social {
+  font-size: 12px;
+}
+
+.big-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+  gap: 5px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: red;
+  margin: 15px auto;
+  padding: 5px;
+}
+@media (max-width: 760px) {
+  .big-div {
+    background-color: red;
+    flex-direction: column;
+  }
+}
+.big-div-left {
+  background-color: white;
+  color: black;
+  padding: 15px;
+}
+.big-div-right {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+}
+.container-box1 {
+  min-width: 150px;
+  height: 100px;
+  background-color: rgb(200, 255, 0);
+}
+.container-box2 {
+  min-width: 150px;
+  height: 100px;
+  background-color: red;
+}
+.container-box3 {
+  min-width: 150px;
+  height: 100px;
+  background-color: green;
+}
+.container-box4 {
+  min-width: 150px;
+  height: 100px;
+  background-color: purple;
+}
+
+.task3-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 760px) {
+  .task3-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .task3-container {
+    flex-direction: row;
+  }
+}
+.task3-container-box1 {
+  min-width: 150px;
+  height: 100px;
+  background-color: purple;
+}
+.task3-container-box2 {
+  min-width: 150px;
+  height: 100px;
+  background-color: red;
+}
+.task3-container-box3 {
+  min-width: 150px;
+  height: 100px;
+  background-color: yellow;
+}
+.task3-container-box4 {
+  min-width: 150px;
+  height: 100px;
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

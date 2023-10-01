@@ -1,0 +1,24 @@
+.big-div {
+    @include ortalama;
+    @include mobile{
+      background-color: red;
+      flex-direction: column;
+    
+    }
+   background-color: orange;
+   gap:5px;
+    max-width: max-content;
+    color: red;
+    margin: 15px auto;
+    padding: 5px;
+  
+    &-left {
+      @include ozelTema(white, black);
+      padding: 15px;
+    }
+  
+    &-right {
+      @include temaSiyah;
+      padding: 15px;
+    }
+  }

@@ -1,0 +1,19 @@
+.container{
+    @include flexBox(center,center,wrap,5px);
+    padding: 5px;
+    
+        &-box1{
+            @include customDiv(rgb(200, 255, 0))
+        }
+    
+        &-box2{
+            @include customDiv(red)
+        }
+        &-box3{
+            @include customDiv(green)
+        }
+    
+        &-box4{
+            @include customDiv(purple)
+        }
+    }

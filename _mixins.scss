@@ -1,0 +1,53 @@
+@mixin ortalama{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexBox($alignItems,$justifyContent,$flexWrap:wrap,$gap){
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    flex-wrap: $flexWrap;
+    gap: $gap;
+
+}
+
+@mixin temaSiyah{
+background-color: $primary-color;
+color: $white-color;
+}
+
+@mixin ozelTema($background-color,$color){
+    background-color: $background-color;
+    color: $color;
+}
+
+/* Div Boyutlarını genişlik 150px yükseklik 100 px olacak şekilde değiştern
+mixini yazınız.Divin dışarıdan aldığı renk olacak
+*/
+
+@mixin customDiv($backgroundcolor){
+  min-width: 150px;
+    height: 100px;
+    background-color: $backgroundcolor;
+}
+
+@mixin mobile {
+    @media (max-width: 760px) {
+        @content;
+    }
+}
+
+@mixin genisEkran {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+
+/*1 divin içine 4 tane div koyun.ekran bouyutu 1200px iken yan yana olsunlar 
+Ekran Boyutu 760px altında iken alt alta
+olacakları şekilde mixin yazınız.
+*/

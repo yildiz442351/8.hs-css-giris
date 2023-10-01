@@ -1,0 +1,24 @@
+.task3-container{
+
+    @include ortalama();
+    @include mobile{
+        flex-direction: column
+    }
+    @include genisEkran{
+        flex-direction: row
+    }
+
+
+    &-box1{
+        @include customDiv(purple);
+    }
+    &-box2{
+        @include customDiv(red);
+    }
+    &-box3{
+        @include customDiv(yellow);
+    }
+    &-box4{
+        @include customDiv(green);
+    }
+}
